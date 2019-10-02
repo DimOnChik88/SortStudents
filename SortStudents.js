@@ -2,7 +2,7 @@ let fs = require('fs');
 
 function sortStudents (group,name,data) {
         fs.mkdir(`./Group${group}/${name}`, ()=>{
-            console.log(`Create directory ${name}`);
+            console.log(`Created directory ${name}`);
         });
 
         fs.appendFile(
